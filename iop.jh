@@ -1,0 +1,166 @@
+application{
+	config{
+    	applicationType monolith
+        authenticationType session
+        baseName iop
+        buildTool maven
+		serverPort 8086
+
+        clientFramework vue
+        clientPackageManager npm
+        
+        databaseType sql
+        devDatabaseType mysql
+		packageName com.iop
+        prodDatabaseType mysql
+        cacheProvider ehcache
+        enableHibernateCache true
+        
+        enableTranslation true
+        nativeLanguage [zh-cn]
+        languages [zh-cn, en]
+    }
+}
+
+/**
+ * 企业
+ */
+entity Enterprise{
+	// 名称
+	name String
+    // 地区编码
+    areaCode String
+}
+
+/**
+ * 场景
+ */
+entity Scenes{
+	/**
+     * 名称
+     */
+	name String
+    
+    /**
+     * 封面图片地址
+     */
+    cover String
+    
+    /**
+     * 描述
+     */
+    desc String
+    
+    /**
+     * 标准数据规范
+     */
+    dataSpec String
+}
+
+/**
+ * 品牌
+ */
+entity Brand{
+	/**
+     * 名称
+     */
+	name String
+    
+    /**
+     * 封面图片地址
+     */
+    cover String
+}
+
+/**
+ * 型号
+ */
+entity Model{
+	/**
+     * 名称
+     */
+	name String
+    
+	/**
+     * 代号
+     */
+	codeName String    
+}
+
+/**
+ * 设备
+ */
+entity Device{
+	/**
+     * 名称
+     */
+	name String
+    
+	/**
+     * 产品标识（pid）
+     */
+	code String
+}
+
+/**
+ * 对接方式
+ */
+entity Docking{
+	/**
+     * 名称
+     */
+	name String
+    
+	/**
+     * 接入变量
+     */
+	variable String
+}
+
+/**
+ * 一个企业下可以有多个品牌
+ */
+relationship ManyToOne{
+	/**
+     * 所属企业
+     */
+	Brand {enterprise(name)} to Enterprise
+}
+
+/**
+ * 一个型号下可以有多个设备
+ */
+relationship ManyToOne{
+	Device {model(name)} to Model
+}
+
+/**
+ * 一个品牌下可以有多个型号
+ */
+relationship ManyToOne{
+	Model {brand(name)} to Brand
+}
+
+/**
+ * 一个场景下可以有多个型号，一个型号可以有多个场景
+ */
+relationship ManyToMany{
+	Scenes {model(name)} to Model {scenes}
+}
+
+/**
+ * 一种对接方式可以给多种型号使用
+ */
+relationship ManyToOne{
+	Model {docking} to Docking
+}
+
+// 对接方式属于中间表，不生成代码
+skipClient Docking
+skipServer Docking
+// paginate * with pagination except Docking
+
+
+
+
+
