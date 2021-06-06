@@ -7,12 +7,12 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "数据",
-        "enterprise": "Enterprise",
-        "scenes": "Scenes",
-        "brand": "Brand",
-        "model": "Model",
-        "device": "Device",
-        "docking": "Docking",
+        "enterprise": "企业",
+        "scenes": "场景",
+        "brand": "品牌",
+        "model": "型号",
+        "device": "设备",
+        "docking": "对接方式",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

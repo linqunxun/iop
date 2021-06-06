@@ -56,7 +56,7 @@
                 v-for="dockingOption in dockings"
                 :key="dockingOption.id"
               >
-                {{ dockingOption.id }}
+                {{ dockingOption.name }}
               </option>
             </select>
           </div>

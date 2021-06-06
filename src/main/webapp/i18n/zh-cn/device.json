@@ -2,25 +2,25 @@
   "iopApp": {
     "device": {
       "home": {
-        "title": "Devices",
-        "refreshListLabel": "Refresh list",
-        "createLabel": "创建新 Device",
-        "createOrEditLabel": "创建或编辑 Device",
-        "notFound": "No Devices found"
+        "title": "设备",
+        "refreshListLabel": "刷新列表",
+        "createLabel": "创建新设备",
+        "createOrEditLabel": "创建或编辑设备",
+        "notFound": "找不到设备"
       },
-      "created": "Device {{ param }} 创建成功",
-      "updated": "Device {{ param }} 更新成功",
-      "deleted": "Device {{ param }} 删除成功",
+      "created": "设备 {{ param }} 创建成功",
+      "updated": "设备 {{ param }} 更新成功",
+      "deleted": "设备 {{ param }} 删除成功",
       "delete": {
-        "question": "你确定要删除 Device {{ id }} 吗？"
+        "question": "你确定要删除 设备 {{ id }} 吗？"
       },
       "detail": {
-        "title": "Device"
+        "title": "设备"
       },
       "id": "ID",
-      "name": "Name",
-      "code": "Code",
-      "model": "Model",
+      "name": "名称",
+      "code": "PID",
+      "model": "型号",
       "help": {
         "name": "名称",
         "code": "产品标识（pid）"

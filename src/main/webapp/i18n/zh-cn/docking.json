@@ -2,24 +2,24 @@
   "iopApp": {
     "docking": {
       "home": {
-        "title": "Dockings",
-        "refreshListLabel": "Refresh list",
-        "createLabel": "创建新 Docking",
-        "createOrEditLabel": "创建或编辑 Docking",
-        "notFound": "No Dockings found"
+        "title": "型号对接方式",
+        "refreshListLabel": "刷新列表",
+        "createLabel": "创建新对接方式",
+        "createOrEditLabel": "创建或编辑对接方式",
+        "notFound": "找不到对接方式"
       },
-      "created": "Docking {{ param }} 创建成功",
-      "updated": "Docking {{ param }} 更新成功",
-      "deleted": "Docking {{ param }} 删除成功",
+      "created": "对接方式 {{ param }} 创建成功",
+      "updated": "对接方式 {{ param }} 更新成功",
+      "deleted": "对接方式 {{ param }} 删除成功",
       "delete": {
-        "question": "你确定要删除 Docking {{ id }} 吗？"
+        "question": "你确定要删除 对接方式 {{ id }} 吗？"
       },
       "detail": {
-        "title": "Docking"
+        "title": "型号对接方式"
       },
       "id": "ID",
-      "name": "Name",
-      "variable": "Variable",
+      "name": "名称",
+      "variable": "变量",
       "help": {
         "name": "名称",
         "variable": "接入变量"

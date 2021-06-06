@@ -2,27 +2,27 @@
   "iopApp": {
     "model": {
       "home": {
-        "title": "Models",
-        "refreshListLabel": "Refresh list",
-        "createLabel": "创建新 Model",
-        "createOrEditLabel": "创建或编辑 Model",
-        "notFound": "No Models found"
+        "title": "型号",
+        "refreshListLabel": "刷新列表",
+        "createLabel": "创建新型号",
+        "createOrEditLabel": "创建或编辑型号",
+        "notFound": "找不到型号"
       },
-      "created": "Model {{ param }} 创建成功",
-      "updated": "Model {{ param }} 更新成功",
-      "deleted": "Model {{ param }} 删除成功",
+      "created": "型号 {{ param }} 创建成功",
+      "updated": "型号 {{ param }} 更新成功",
+      "deleted": "型号 {{ param }} 删除成功",
       "delete": {
-        "question": "你确定要删除 Model {{ id }} 吗？"
+        "question": "你确定要删除 型号 {{ id }} 吗？"
       },
       "detail": {
-        "title": "Model"
+        "title": "型号"
       },
       "id": "ID",
-      "name": "Name",
-      "codeName": "Code Name",
-      "brand": "Brand",
-      "docking": "Docking",
-      "scenes": "Scenes",
+      "name": "名称",
+      "codeName": "代号",
+      "brand": "品牌",
+      "docking": "对接方式",
+      "scenes": "场景列表",
       "help": {
         "name": "名称",
         "codeName": "代号"

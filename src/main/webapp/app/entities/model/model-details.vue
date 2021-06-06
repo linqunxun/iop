@@ -31,7 +31,7 @@
           </dt>
           <dd>
             <div v-if="model.docking">
-              <router-link :to="{ name: 'DockingView', params: { dockingId: model.docking.id } }">{{ model.docking.id }}</router-link>
+              <router-link :to="{ name: 'DockingView', params: { dockingId: model.docking.id } }">{{ model.docking.name }}</router-link>
             </div>
           </dd>
           <dt>

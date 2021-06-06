@@ -2,25 +2,25 @@
   "iopApp": {
     "brand": {
       "home": {
-        "title": "Brands",
-        "refreshListLabel": "Refresh list",
-        "createLabel": "创建新 Brand",
-        "createOrEditLabel": "创建或编辑 Brand",
-        "notFound": "No Brands found"
+        "title": "品牌",
+        "refreshListLabel": "刷新列表",
+        "createLabel": "创建新品牌",
+        "createOrEditLabel": "创建或编辑品牌",
+        "notFound": "找不到品牌"
       },
-      "created": "Brand {{ param }} 创建成功",
-      "updated": "Brand {{ param }} 更新成功",
-      "deleted": "Brand {{ param }} 删除成功",
+      "created": "品牌 {{ param }} 创建成功",
+      "updated": "品牌 {{ param }} 更新成功",
+      "deleted": "品牌 {{ param }} 删除成功",
       "delete": {
-        "question": "你确定要删除 Brand {{ id }} 吗？"
+        "question": "你确定要删除 品牌 {{ id }} 吗？"
       },
       "detail": {
-        "title": "Brand"
+        "title": "品牌"
       },
       "id": "ID",
-      "name": "Name",
-      "cover": "Cover",
-      "enterprise": "Enterprise",
+      "name": "名称",
+      "cover": "封面图片",
+      "enterprise": "所属企业",
       "help": {
         "name": "名称",
         "cover": "封面图片地址"

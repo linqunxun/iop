@@ -44,9 +44,9 @@
               <span v-text="$t('iopApp.model.brand')">Brand</span>
               <jhi-sort-indicator :current-order="propOrder" :reverse="reverse" :field-name="'brand.name'"></jhi-sort-indicator>
             </th>
-            <th scope="row" v-on:click="changeOrder('docking.id')">
+            <th scope="row" v-on:click="changeOrder('docking.name')">
               <span v-text="$t('iopApp.model.docking')">Docking</span>
-              <jhi-sort-indicator :current-order="propOrder" :reverse="reverse" :field-name="'docking.id'"></jhi-sort-indicator>
+              <jhi-sort-indicator :current-order="propOrder" :reverse="reverse" :field-name="'docking.name'"></jhi-sort-indicator>
             </th>
             <th scope="row"></th>
           </tr>
@@ -65,7 +65,7 @@
             </td>
             <td>
               <div v-if="model.docking">
-                <router-link :to="{ name: 'DockingView', params: { dockingId: model.docking.id } }">{{ model.docking.id }}</router-link>
+                <router-link :to="{ name: 'DockingView', params: { dockingId: model.docking.id } }">{{ model.docking.name }}</router-link>
               </div>
             </td>
             <td class="text-right">

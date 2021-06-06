@@ -26,7 +26,8 @@
       "otherEntityName": "docking",
       "otherEntityRelationshipName": "model",
       "javadoc": "对接方式",
-      "relationshipName": "docking"
+      "relationshipName": "docking",
+      "otherEntityField": "name"
     },
     {
       "relationshipType": "many-to-many",
