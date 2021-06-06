@@ -50,7 +50,6 @@ public class CacheConfiguration {
             createCache(cm, com.iop.domain.User.class.getName() + ".authorities");
             createCache(cm, com.iop.domain.PersistentToken.class.getName());
             createCache(cm, com.iop.domain.User.class.getName() + ".persistentTokens");
-            createCache(cm, com.iop.domain.Enterprise.class.getName());
             createCache(cm, com.iop.domain.Scenes.class.getName());
             createCache(cm, com.iop.domain.Scenes.class.getName() + ".models");
             createCache(cm, com.iop.domain.Brand.class.getName());

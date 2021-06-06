@@ -29,10 +29,6 @@
             <font-awesome-icon icon="th-list" />
             <span class="no-bold" v-text="$t('global.menu.entities.main')">Entities</span>
           </span>
-          <b-dropdown-item to="/enterprise">
-            <font-awesome-icon icon="asterisk" />
-            <span v-text="$t('global.menu.entities.enterprise')">Enterprise</span>
-          </b-dropdown-item>
           <b-dropdown-item to="/scenes">
             <font-awesome-icon icon="asterisk" />
             <span v-text="$t('global.menu.entities.scenes')">Scenes</span>

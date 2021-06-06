@@ -18,16 +18,6 @@
           <dd>
             <span>{{ brand.cover }}</span>
           </dd>
-          <dt>
-            <span v-text="$t('iopApp.brand.enterprise')">Enterprise</span>
-          </dt>
-          <dd>
-            <div v-if="brand.enterprise">
-              <router-link :to="{ name: 'EnterpriseView', params: { enterpriseId: brand.enterprise.id } }">{{
-                brand.enterprise.name
-              }}</router-link>
-            </div>
-          </dd>
         </dl>
         <button type="submit" v-on:click.prevent="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
           <font-awesome-icon icon="arrow-left"></font-awesome-icon>&nbsp;<span v-text="$t('entity.action.back')"> Back</span>

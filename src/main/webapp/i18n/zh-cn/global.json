@@ -7,7 +7,6 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "数据",
-        "enterprise": "企业",
         "scenes": "场景",
         "brand": "品牌",
         "model": "型号",

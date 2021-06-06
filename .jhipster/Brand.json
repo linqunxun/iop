@@ -12,16 +12,7 @@
       "javadoc": "封面图片地址"
     }
   ],
-  "relationships": [
-    {
-      "relationshipType": "many-to-one",
-      "otherEntityName": "enterprise",
-      "otherEntityRelationshipName": "brand",
-      "javadoc": "所属企业",
-      "relationshipName": "enterprise",
-      "otherEntityField": "name"
-    }
-  ],
+  "relationships": [],
   "javadoc": "品牌",
   "entityTableName": "brand",
   "dto": "no",
@@ -32,5 +23,5 @@
   "readOnly": false,
   "embedded": false,
   "applications": ["iop"],
-  "changelogDate": "20210606135500"
+  "changelogDate": "20210606151344"
 }

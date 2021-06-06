@@ -4,14 +4,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
     <!--
-        Added the constraints for entity Brand.
+        Added the constraints for entity Device.
     -->
-    <changeSet id="20210606135500-2" author="jhipster">
+    <changeSet id="20210606151544-2" author="jhipster">
 
-        <addForeignKeyConstraint baseColumnNames="enterprise_id"
-                                 baseTableName="brand"
-                                 constraintName="fk_brand__enterprise_id"
+        <addForeignKeyConstraint baseColumnNames="model_id"
+                                 baseTableName="device"
+                                 constraintName="fk_device__model_id"
                                  referencedColumnNames="id"
-                                 referencedTableName="enterprise"/>
+                                 referencedTableName="model"/>
     </changeSet>
 </databaseChangeLog>

@@ -1,8 +1,5 @@
 import { Component, Vue, Inject } from 'vue-property-decorator';
 
-import EnterpriseService from '@/entities/enterprise/enterprise.service';
-import { IEnterprise } from '@/shared/model/enterprise.model';
-
 import { IBrand, Brand } from '@/shared/model/brand.model';
 import BrandService from './brand.service';
 
@@ -19,10 +16,6 @@ const validations: any = {
 export default class BrandUpdate extends Vue {
   @Inject('brandService') private brandService: () => BrandService;
   public brand: IBrand = new Brand();
-
-  @Inject('enterpriseService') private enterpriseService: () => EnterpriseService;
-
-  public enterprises: IEnterprise[] = [];
   public isSaving = false;
   public currentLanguage = '';
 
@@ -31,7 +24,6 @@ export default class BrandUpdate extends Vue {
       if (to.params.brandId) {
         vm.retrieveBrand(to.params.brandId);
       }
-      vm.initRelationships();
     });
   }
 
@@ -92,11 +84,5 @@ export default class BrandUpdate extends Vue {
     this.$router.go(-1);
   }
 
-  public initRelationships(): void {
-    this.enterpriseService()
-      .retrieve()
-      .then(res => {
-        this.enterprises = res.data;
-      });
-  }
+  public initRelationships(): void {}
 }

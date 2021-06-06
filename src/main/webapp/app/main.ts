@@ -27,7 +27,6 @@ import TranslationService from '@/locale/translation.service';
 import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 /* tslint:disable */
 
-import EnterpriseService from '@/entities/enterprise/enterprise.service';
 import ScenesService from '@/entities/scenes/scenes.service';
 import BrandService from '@/entities/brand/brand.service';
 import ModelService from '@/entities/model/model.service';
@@ -91,7 +90,6 @@ new Vue({
 
     userOAuth2Service: () => new UserOAuth2Service(),
     translationService: () => translationService,
-    enterpriseService: () => new EnterpriseService(),
     scenesService: () => new ScenesService(),
     brandService: () => new BrandService(),
     modelService: () => new ModelService(),

@@ -3,12 +3,6 @@ import { Authority } from '@/shared/security/authority';
 // prettier-ignore
 
 // prettier-ignore
-const Enterprise = () => import('@/entities/enterprise/enterprise.vue');
-// prettier-ignore
-const EnterpriseUpdate = () => import('@/entities/enterprise/enterprise-update.vue');
-// prettier-ignore
-const EnterpriseDetails = () => import('@/entities/enterprise/enterprise-details.vue');
-// prettier-ignore
 const Scenes = () => import('@/entities/scenes/scenes.vue');
 // prettier-ignore
 const ScenesUpdate = () => import('@/entities/scenes/scenes-update.vue');
@@ -41,30 +35,6 @@ const DockingDetails = () => import('@/entities/docking/docking-details.vue');
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 export default [
-  {
-    path: '/enterprise',
-    name: 'Enterprise',
-    component: Enterprise,
-    meta: { authorities: [Authority.USER] },
-  },
-  {
-    path: '/enterprise/new',
-    name: 'EnterpriseCreate',
-    component: EnterpriseUpdate,
-    meta: { authorities: [Authority.USER] },
-  },
-  {
-    path: '/enterprise/:enterpriseId/edit',
-    name: 'EnterpriseEdit',
-    component: EnterpriseUpdate,
-    meta: { authorities: [Authority.USER] },
-  },
-  {
-    path: '/enterprise/:enterpriseId/view',
-    name: 'EnterpriseView',
-    component: EnterpriseDetails,
-    meta: { authorities: [Authority.USER] },
-  },
   {
     path: '/scenes',
     name: 'Scenes',

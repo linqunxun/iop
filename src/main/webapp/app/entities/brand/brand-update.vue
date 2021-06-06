@@ -34,19 +34,6 @@
               v-model="$v.brand.cover.$model"
             />
           </div>
-          <div class="form-group">
-            <label class="form-control-label" v-text="$t('iopApp.brand.enterprise')" for="brand-enterprise">Enterprise</label>
-            <select class="form-control" id="brand-enterprise" data-cy="enterprise" name="enterprise" v-model="brand.enterprise">
-              <option v-bind:value="null"></option>
-              <option
-                v-bind:value="brand.enterprise && enterpriseOption.id === brand.enterprise.id ? brand.enterprise : enterpriseOption"
-                v-for="enterpriseOption in enterprises"
-                :key="enterpriseOption.id"
-              >
-                {{ enterpriseOption.name }}
-              </option>
-            </select>
-          </div>
         </div>
         <div>
           <button type="button" id="cancel-save" class="btn btn-secondary" v-on:click="previousState()">

@@ -20,7 +20,6 @@
       "id": "ID",
       "name": "Name",
       "cover": "Cover",
-      "enterprise": "Enterprise",
       "help": {
         "name": "名称",
         "cover": "封面图片地址"

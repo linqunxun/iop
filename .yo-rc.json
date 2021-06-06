@@ -34,14 +34,14 @@
     "reactive": false,
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "entities": ["Enterprise", "Scenes", "Brand", "Model", "Device", "Docking"],
+    "entities": ["Scenes", "Brand", "Model", "Device", "Docking"],
     "skipCheckLengthOfIdentifier": false,
     "skipFakeData": false,
     "blueprints": [],
     "otherModules": [],
     "pages": [],
-    "creationTimestamp": 1622987520240,
-    "rememberMeKey": "33bfc828e809714021db0763633793271214b0c3b73acd4db68a02d4af10b9fda471b2e91cdaabbf14635fd350f38318e7d8",
-    "lastLiquibaseTimestamp": 1622987880000
+    "creationTimestamp": 1622992304279,
+    "rememberMeKey": "0ff23b0c127a371240e22bec1b3abb307359fb775a398c6537a1e0df74aaba797fbbf3927830891214b9b9b011303ee95b8f",
+    "lastLiquibaseTimestamp": 1622992604000
   }
 }

@@ -44,7 +44,6 @@ public class Model implements Serializable {
      */
     @ApiModelProperty(value = "品牌")
     @ManyToOne
-    @JsonIgnoreProperties(value = { "enterprise" }, allowSetters = true)
     private Brand brand;
 
     /**

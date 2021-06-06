@@ -8,8 +8,6 @@ import BrandUpdateComponent from '@/entities/brand/brand-update.vue';
 import BrandClass from '@/entities/brand/brand-update.component';
 import BrandService from '@/entities/brand/brand.service';
 
-import EnterpriseService from '@/entities/enterprise/enterprise.service';
-
 const localVue = createLocalVue();
 
 config.initVueApp(localVue);
@@ -39,8 +37,6 @@ describe('Component Tests', () => {
         router,
         provide: {
           brandService: () => brandServiceStub,
-
-          enterpriseService: () => new EnterpriseService(),
         },
       });
       comp = wrapper.vm;

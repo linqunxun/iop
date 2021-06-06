@@ -36,13 +36,6 @@ public class Brand implements Serializable {
     @Column(name = "cover")
     private String cover;
 
-    /**
-     * 所属企业
-     */
-    @ApiModelProperty(value = "所属企业")
-    @ManyToOne
-    private Enterprise enterprise;
-
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
         return id;
@@ -81,19 +74,6 @@ public class Brand implements Serializable {
 
     public void setCover(String cover) {
         this.cover = cover;
-    }
-
-    public Enterprise getEnterprise() {
-        return this.enterprise;
-    }
-
-    public Brand enterprise(Enterprise enterprise) {
-        this.setEnterprise(enterprise);
-        return this;
-    }
-
-    public void setEnterprise(Enterprise enterprise) {
-        this.enterprise = enterprise;
     }
 
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here

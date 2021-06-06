@@ -40,10 +40,6 @@
               <span v-text="$t('iopApp.brand.cover')">Cover</span>
               <jhi-sort-indicator :current-order="propOrder" :reverse="reverse" :field-name="'cover'"></jhi-sort-indicator>
             </th>
-            <th scope="row" v-on:click="changeOrder('enterprise.name')">
-              <span v-text="$t('iopApp.brand.enterprise')">Enterprise</span>
-              <jhi-sort-indicator :current-order="propOrder" :reverse="reverse" :field-name="'enterprise.name'"></jhi-sort-indicator>
-            </th>
             <th scope="row"></th>
           </tr>
         </thead>
@@ -54,13 +50,6 @@
             </td>
             <td>{{ brand.name }}</td>
             <td>{{ brand.cover }}</td>
-            <td>
-              <div v-if="brand.enterprise">
-                <router-link :to="{ name: 'EnterpriseView', params: { enterpriseId: brand.enterprise.id } }">{{
-                  brand.enterprise.name
-                }}</router-link>
-              </div>
-            </td>
             <td class="text-right">
               <div class="btn-group">
                 <router-link :to="{ name: 'BrandView', params: { brandId: brand.id } }" custom v-slot="{ navigate }">
