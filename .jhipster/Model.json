@@ -1,0 +1,52 @@
+{
+  "name": "Model",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "名称"
+    },
+    {
+      "fieldName": "codeName",
+      "fieldType": "String",
+      "javadoc": "代号"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "brand",
+      "otherEntityRelationshipName": "model",
+      "javadoc": "品牌",
+      "relationshipName": "brand",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "docking",
+      "otherEntityRelationshipName": "model",
+      "javadoc": "对接方式",
+      "relationshipName": "docking"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "scenes",
+      "otherEntityRelationshipName": "model",
+      "javadoc": "场景列表",
+      "relationshipName": "scenes",
+      "otherEntityField": "name",
+      "ownerSide": true
+    }
+  ],
+  "javadoc": "型号",
+  "entityTableName": "model",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["iop"],
+  "changelogDate": "20210606135600"
+}

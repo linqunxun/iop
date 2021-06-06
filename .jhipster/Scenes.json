@@ -1,0 +1,45 @@
+{
+  "name": "Scenes",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "名称"
+    },
+    {
+      "fieldName": "cover",
+      "fieldType": "String",
+      "javadoc": "封面图片地址"
+    },
+    {
+      "fieldName": "desc",
+      "fieldType": "String",
+      "javadoc": "描述"
+    },
+    {
+      "fieldName": "dataSpec",
+      "fieldType": "String",
+      "javadoc": "标准数据规范"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "model",
+      "otherEntityRelationshipName": "scenes",
+      "relationshipName": "model",
+      "ownerSide": false
+    }
+  ],
+  "javadoc": "场景",
+  "entityTableName": "scenes",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["iop"],
+  "changelogDate": "20210606135400"
+}

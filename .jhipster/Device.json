@@ -1,0 +1,36 @@
+{
+  "name": "Device",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "名称"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "javadoc": "产品标识（pid）"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "model",
+      "otherEntityRelationshipName": "device",
+      "javadoc": "型号",
+      "relationshipName": "model",
+      "otherEntityField": "name"
+    }
+  ],
+  "javadoc": "设备",
+  "entityTableName": "device",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["iop"],
+  "changelogDate": "20210606135700"
+}

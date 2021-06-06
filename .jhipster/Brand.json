@@ -1,0 +1,36 @@
+{
+  "name": "Brand",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "名称"
+    },
+    {
+      "fieldName": "cover",
+      "fieldType": "String",
+      "javadoc": "封面图片地址"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "enterprise",
+      "otherEntityRelationshipName": "brand",
+      "javadoc": "所属企业",
+      "relationshipName": "enterprise",
+      "otherEntityField": "name"
+    }
+  ],
+  "javadoc": "品牌",
+  "entityTableName": "brand",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["iop"],
+  "changelogDate": "20210606135500"
+}

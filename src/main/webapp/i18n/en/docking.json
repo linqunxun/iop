@@ -1,0 +1,29 @@
+{
+  "iopApp": {
+    "docking": {
+      "home": {
+        "title": "Dockings",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Docking",
+        "createOrEditLabel": "Create or edit a Docking",
+        "notFound": "No Dockings found"
+      },
+      "created": "A new Docking is created with identifier {{ param }}",
+      "updated": "A Docking is updated with identifier {{ param }}",
+      "deleted": "A Docking is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Docking {{ id }}?"
+      },
+      "detail": {
+        "title": "Docking"
+      },
+      "id": "ID",
+      "name": "Name",
+      "variable": "Variable",
+      "help": {
+        "name": "名称",
+        "variable": "接入变量"
+      }
+    }
+  }
+}

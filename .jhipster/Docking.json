@@ -1,0 +1,27 @@
+{
+  "name": "Docking",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "名称"
+    },
+    {
+      "fieldName": "variable",
+      "fieldType": "String",
+      "javadoc": "接入变量"
+    }
+  ],
+  "relationships": [],
+  "javadoc": "对接方式",
+  "entityTableName": "docking",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["iop"],
+  "changelogDate": "20210606135800"
+}

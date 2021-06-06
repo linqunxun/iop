@@ -1,0 +1,25 @@
+{
+  "iopApp": {
+    "enterprise": {
+      "home": {
+        "title": "Enterprises",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Enterprise",
+        "createOrEditLabel": "创建或编辑 Enterprise",
+        "notFound": "No Enterprises found"
+      },
+      "created": "Enterprise {{ param }} 创建成功",
+      "updated": "Enterprise {{ param }} 更新成功",
+      "deleted": "Enterprise {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Enterprise {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Enterprise"
+      },
+      "id": "ID",
+      "name": "Name",
+      "areaCode": "Area Code"
+    }
+  }
+}

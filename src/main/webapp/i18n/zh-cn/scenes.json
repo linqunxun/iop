@@ -1,0 +1,34 @@
+{
+  "iopApp": {
+    "scenes": {
+      "home": {
+        "title": "Scenes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Scenes",
+        "createOrEditLabel": "创建或编辑 Scenes",
+        "notFound": "No Scenes found"
+      },
+      "created": "Scenes {{ param }} 创建成功",
+      "updated": "Scenes {{ param }} 更新成功",
+      "deleted": "Scenes {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Scenes {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Scenes"
+      },
+      "id": "ID",
+      "name": "Name",
+      "cover": "Cover",
+      "desc": "Desc",
+      "dataSpec": "Data Spec",
+      "model": "Model",
+      "help": {
+        "name": "名称",
+        "cover": "封面图片地址",
+        "desc": "描述",
+        "dataSpec": "标准数据规范"
+      }
+    }
+  }
+}
